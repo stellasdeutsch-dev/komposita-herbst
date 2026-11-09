@@ -738,6 +738,37 @@ figure{margin:0}
   .vz-two{grid-template-columns:minmax(0,1fr)}
 }
 
+/*ret*/
+.ret-lw{padding:0 var(--gut) clamp(76px,9vw,124px)}
+.ret-loop{max-width:36em;margin:0 auto;text-align:center;font-size:clamp(18px,1.7vw,22px);line-height:1.4;color:#fff;text-wrap:pretty}
+.ret-loop b{color:var(--lime);font-weight:700}
+.ret-cp{display:grid;grid-template-columns:minmax(230px,.42fr) 1fr;gap:12px 36px;align-items:center;margin-bottom:clamp(40px,5vw,64px)}
+#exc .ret-cp{margin:clamp(40px,5vw,64px) 0 0}
+.ret-cp-l b{display:block;font:800 clamp(32px,3vw,42px)/1 var(--f-h);color:#fff}
+.ret-cp-b{display:block;height:10px;background:#3a3a3a;margin-top:12px;border-radius:5px;overflow:hidden}
+.ret-cp-b i{display:block;height:100%;width:var(--p);background:var(--lime);border-radius:5px}
+.ret-cp p{margin:0;font-size:16px;line-height:1.42;color:#DEDED6;text-wrap:pretty}
+.sec.ret-br{padding-bottom:0}
+.ret-br-g{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:0 clamp(28px,5vw,72px);align-items:end}
+.ret-br-p{display:block;width:100%;max-width:400px;height:auto;justify-self:center}
+.ret-br-t{align-self:center;padding-bottom:clamp(40px,6vw,84px)}
+.ret-br .h{font-size:clamp(50px,5.8vw,82px)}
+.ret-br .h .c-lime{white-space:nowrap}
+.ret-l{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px}
+.ret-l li{position:relative;padding-left:26px;font-size:17px;line-height:1.36;color:#fff;text-wrap:pretty}
+.ret-l li::before{content:"";position:absolute;left:0;top:.28em;width:14px;height:14px;border-radius:50%;background:var(--lime)}
+.ret-l b{font-weight:700;color:var(--peach)}
+.ret-why{margin:20px 0 26px;font-size:17px;line-height:1.45;color:#DEDED6;text-wrap:pretty}
+@media (max-width:760px){
+  .ret-cp{grid-template-columns:1fr}
+  .ret-br-g{grid-template-columns:1fr}
+  .ret-br-p{max-width:320px}
+  .ret-br-t{text-align:center;padding-top:30px;padding-bottom:64px}
+  .ret-br .h.l{text-align:center}
+  .ret-l{text-align:left;width:fit-content;margin-inline:auto}
+}
+/*/ret*/
+
 </style>
 
 </head>
@@ -851,6 +882,8 @@ figure{margin:0}
   </div>
 </section>
 
+<div class="tex-s ret-lw"><p class="ret-loop">Тыквенный суп я заказывал два раза. <b>Чем кончился второй, расскажу в самом конце.</b></p></div>
+
 <section class="sec lime tex-l" id="fail">
   <svg class="torn tt"><use href="#torn1"/></svg><svg class="torn tb"><use href="#torn2"/></svg>
   <div class="wrap">
@@ -950,6 +983,7 @@ figure{margin:0}
 
 <section class="sec tex-c" id="how">
   <div class="wrap">
+    <div class="rc ret-cp"><div class="ret-cp-l"><b>Больше трети позади</b><span class="ret-cp-b" style="--p:36%"><i></i></span></div><p>Из <span class="k">10 минут</span> осталось около шести. Дальше сам клей: три сорта слов на входе и буква-прокладка, которую не переводят.</p></div>
     <h2 class="h">Как клеить</h2>
     <p class="lede">Три сорта слов на входе. На выходе всегда существительное.</p>
     <div class="ty-g">
@@ -1129,6 +1163,7 @@ figure{margin:0}
       <article class="rc hov err"><h3>Имена через дефис</h3><div class="ln ok"><svg><use href="#i-check"/></svg><span lang="de">das Goethe-Zertifikat</span></div><p>Имя с обычным словом склеивается дефисом. Клей другой, начальник тот же: <span lang="de">das Zertifikat</span>.</p></article>
     </div>
     <div class="rc ik trn" id="trn"><h3>Вагонов сколько угодно. Артикль у последнего</h3><div class="tr-w" lang="de"><span class="a f" id="trA">die</span><span class="wg">Ernte</span><span class="wg" hidden>dank</span><span class="wg" hidden>fest</span></div><p id="trN"></p></div>
+    <div class="rc ret-cp"><div class="ret-cp-l"><b>Две трети позади</b><span class="ret-cp-b" style="--p:69%"><i></i></span></div><p>Осталось минуты три. Дальше осень по запчастям, праздники по датам и тест на 6 вопросов.</p></div>
   </div>
 </section>
 
@@ -1271,6 +1306,21 @@ figure{margin:0}
 
 
 
+
+<section class="sec tex-c ret-br">
+  <div class="wrap ret-br-g">
+    <img class="ret-br-p" src="media/ph-bridge.webp" alt="" width="376" height="517" loading="lazy">
+    <div class="ret-br-t">
+      <h2 class="h l">Суп кончился. <span class="c-lime">Артикль остался</span></h2>
+      <ul class="ret-l">
+        <li>Артикль склейки берёшь у последнего слова: <b lang="de">die Kürbissuppe</b></li>
+        <li>Длинное слово разбираешь на детали. Начальник стоит в конце</li>
+      </ul>
+      <p class="ret-why">Одна тема закрыта. Всего на платформе <span class="k">340+</span> гайдов от A0 до C1, один платёж <span class="k">30 €</span>.</p>
+      <a class="btn" href="#platform">Смотреть платформу</a>
+    </div>
+  </div>
+</section>
 
 <section class="sec tex-s" id="platform">
   <div class="wrap">
